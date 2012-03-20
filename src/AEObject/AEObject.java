@@ -16,6 +16,11 @@ public abstract class AEObject
 		m_attributeList = new HashMap< String, AEAttribute >();
 	}
 	
+	public AEAttribute FindAttribute(String attrStr)
+	{		
+		return m_attributeList.get(attrStr);
+	}
+	
 	protected boolean SetPositionAttribute()
 	{
 		if( m_attributeList.get("Attr_Position") == null )
